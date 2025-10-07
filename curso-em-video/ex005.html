@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005</title>
+</head>
+<body>
+    <h1>Iniciando inicios com DOM</h1>
+    <p name="juv">Aqui vai o resultado</p>
+    <p class="breno">Aprendendo a usar o <strong>DOM</strong> na pratica</p>
+    <div id="d">Clique aqui</div>
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[1];//crio a variavel p1 e pego o segundo elemento p do documento.
+        window.document.write(p1.innerText);//trago o texto do segundo elemento p para a variavel p1 e escrevo na tela.
+
+        let d = window.document.getElementById('d');//crio o variavel d e pego o elemnto pelo id=d.
+        d.style.color = 'green';//mudo a cor do texto do elemento d para verde.
+        d.innerText = "Mudei esse texto usando JS"; // mudo o texto do elemento d.
+        d.style.backgroundColor = 'lightblue'; // mudo a cor de fundo do elemento d.
+
+        let breno = window.document.getElementsByClassName('breno')[0]; // crio a variavel breno e pego o elemento primeiro elemento com a class=breno.
+        breno.style.fontWeight = 'bold'; //mudo o peso da fonte do elemento breno para negrito.
+
+        let j = window.document.querySelector('p.breno')
+        j.style.backgroundColor = 'lightcoral';
+    </script>
+</body>
+</html> 
