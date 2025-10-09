@@ -11,7 +11,7 @@ section {
     border-radius: 10px;
     padding: 15px;
     margin: auto;
-    width: 500px;
+    width: 600px;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.305);
 }
@@ -19,4 +19,10 @@ footer {
     text-align: center;
     color: white;
     font-style: italic;
+}
+img {
+     width: 200px;         /* largura da imagem */
+  height: 200px;        /* altura da imagem */
+  border-radius: 50%;   /* deixa a imagem redonda */
+  object-fit: cover;    /* evita distorção e corta o excesso */
 }

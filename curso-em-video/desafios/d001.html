@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css"> <!-- chama o css -->
 </head>
-<body>
-    <header>
+<body onload="carregar()"><!-- onload = pra chamar a funcao carregar() -->
+    <header> <!-- cabecalho -->
         <h1>Hora do Dia</h1>
     </header>
-    <section>
-        <div>
-            123
+    <section><!-- conteúdo -->
+        <div id="msg">
         </div>
-        <div>
-            123
+        <div id="foto">
+            <img id="imagem" src="imagens/manha.jpg" alt="foto dia">
         </div>
     </section>
-    <footer>
-        <p>&copy BrenoGaudencio</p>
+    <footer><!-- rodapé -->
+        <p>&copyBrenoGaudencio</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- chama o js -->
 </body>
 </html>
